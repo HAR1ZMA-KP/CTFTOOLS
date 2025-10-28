@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -104,13 +104,13 @@
         .apps-container {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 20px;
         }
 
         .app-window {
             background-color: #333;
             border-radius: 10px;
-            padding: 25px;
+            padding: 20px;
             border-left: 6px solid #00ff88;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -123,20 +123,20 @@
 
         .app-window h3 {
             color: #00ff88;
-            margin-bottom: 20px;
-            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-size: 1.4em;
             border-bottom: 2px solid #00ff88;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
         }
 
         .app-content {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .app-content p {
-            margin-bottom: 15px;
-            font-size: 1.1em;
-            line-height: 1.8;
+            margin-bottom: 12px;
+            font-size: 1em;
+            line-height: 1.6;
         }
 
         .app-content ul {
@@ -145,10 +145,11 @@
         }
 
         .app-content li {
-            padding: 8px 0;
-            padding-left: 25px;
+            padding: 6px 0;
+            padding-left: 20px;
             position: relative;
             border-bottom: 1px solid #444;
+            font-size: 0.9em;
         }
 
         .app-content li:before {
@@ -156,7 +157,7 @@
             color: #00ff88;
             position: absolute;
             left: 0;
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
 
         .app-content li:last-child {
@@ -167,12 +168,15 @@
             display: inline-block;
             background-color: #00ff88;
             color: #1a1a1a;
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
             border: 2px solid #00ff88;
+            text-align: center;
+            min-width: 180px;
+            font-size: 0.9em;
         }
 
         .app-link:hover {
@@ -199,11 +203,16 @@
             }
             
             .app-window {
-                padding: 20px;
+                padding: 15px;
             }
             
             .app-window h3 {
-                font-size: 1.3em;
+                font-size: 1.2em;
+            }
+            
+            .app-link {
+                width: 100%;
+                min-width: auto;
             }
         }
     </style>
@@ -238,26 +247,22 @@
                                 <li>site: - поиск на конкретном сайте</li>
                                 <li>filetype: - поиск по типу файла</li>
                                 <li>intitle: - поиск в заголовках</li>
-                                <li>inurl: - поиск в URL</li>
-                                <li>cache: - просмотр кэшированной версии</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть инструмент</a>
+                        <a href="https://www.google.com" class="app-link" target="_blank">Открыть Google</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>Shodan Search</h3>
+                        <h3>Shodan</h3>
                         <div class="app-content">
-                            <p>Поисковая система для интернета вещей и сетевых устройств</p>
+                            <p>Поисковая система для интернета вещей</p>
                             <ul>
                                 <li>Поиск открытых портов</li>
                                 <li>Анализ сервисов</li>
                                 <li>Геолокация устройств</li>
-                                <li>Поиск уязвимых систем</li>
-                                <li>Мониторинг сетевой инфраструктуры</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть Shodan</a>
+                        <a href="https://www.shodan.io" class="app-link" target="_blank">Открыть Shodan</a>
                     </div>
 
                     <div class="app-window">
@@ -268,11 +273,165 @@
                                 <li>Трансформы для сбора данных</li>
                                 <li>Визуализация связей</li>
                                 <li>Анализ социальных сетей</li>
-                                <li>Построение графов отношений</li>
-                                <li>Автоматизация сбора информации</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Maltego</a>
+                        <a href="https://www.maltego.com" class="app-link" target="_blank">Скачать Maltego</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>theHarvester</h3>
+                        <div class="app-content">
+                            <p>Сбор информации о доменах и поддоменах</p>
+                            <ul>
+                                <li>Сбор email-адресов</li>
+                                <li>Поиск поддоменов</li>
+                                <li>Сканирование портов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/laramies/theHarvester" class="app-link" target="_blank">Скачать theHarvester</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Recon-ng</h3>
+                        <div class="app-content">
+                            <p>Фреймворк для веб-рекогносцировки</p>
+                            <ul>
+                                <li>Модульная архитектура</li>
+                                <li>Автоматизация сбора данных</li>
+                                <li>Интеграция с API</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/lanmaster53/recon-ng" class="app-link" target="_blank">Скачать Recon-ng</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>SpiderFoot</h3>
+                        <div class="app-content">
+                            <p>Автоматизация OSINT сбора информации</p>
+                            <ul>
+                                <li>Сканирование угроз</li>
+                                <li>Анализ цифровых следов</li>
+                                <li>Генерация отчетов</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.spiderfoot.net" class="app-link" target="_blank">Скачать SpiderFoot</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>OSINT Framework</h3>
+                        <div class="app-content">
+                            <p>Коллекция OSINT инструментов и ресурсов</p>
+                            <ul>
+                                <li>Структурированная база данных</li>
+                                <li>Поиск по категориям</li>
+                                <li>Актуальные ресурсы</li>
+                            </ul>
+                        </div>
+                        <a href="https://osintframework.com" class="app-link" target="_blank">Открыть Framework</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Creepy</h3>
+                        <div class="app-content">
+                            <p>Геолокационный OSINT инструмент</p>
+                            <ul>
+                                <li>Анализ геоданных</li>
+                                <li>Визуализация на картах</li>
+                                <li>Экспорт результатов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/ilektrojohn/creepy" class="app-link" target="_blank">Скачать Creepy</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Sherlock</h3>
+                        <div class="app-content">
+                            <p>Поиск аккаунтов по имени пользователя</p>
+                            <ul>
+                                <li>Проверка соцсетей</li>
+                                <li>Массовый поиск</li>
+                                <li>Поддержка множества платформ</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/sherlock-project/sherlock" class="app-link" target="_blank">Скачать Sherlock</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Photogram</h3>
+                        <div class="app-content">
+                            <p>Анализ метаданных изображений</p>
+                            <ul>
+                                <li>EXIF данные</li>
+                                <li>Геолокация</li>
+                                <li>Информация о камере</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/sherlock-project/sherlock" class="app-link" target="_blank">Скачать Photogram</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>TinEye</h3>
+                        <div class="app-content">
+                            <p>Обратный поиск изображений</p>
+                            <ul>
+                                <li>Поиск оригинала</li>
+                                <li>Поиск копий</li>
+                                <li>Анализ использования</li>
+                            </ul>
+                        </div>
+                        <a href="https://tineye.com" class="app-link" target="_blank">Открыть TinEye</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Have I Been Pwned</h3>
+                        <div class="app-content">
+                            <p>Проверка утечек данных</p>
+                            <ul>
+                                <li>Проверка email</li>
+                                <li>Проверка паролей</li>
+                                <li>История утечек</li>
+                            </ul>
+                        </div>
+                        <a href="https://haveibeenpwned.com" class="app-link" target="_blank">Открыть HIBP</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>DeHashed</h3>
+                        <div class="app-content">
+                            <p>Поиск в базах утекших данных</p>
+                            <ul>
+                                <li>Поиск по email</li>
+                                <li>Поиск по имени</li>
+                                <li>Поиск по телефону</li>
+                            </ul>
+                        </div>
+                        <a href="https://dehashed.com" class="app-link" target="_blank">Открыть DeHashed</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>IntelTechniques</h3>
+                        <div class="app-content">
+                            <p>Коллекция OSINT инструментов</p>
+                            <ul>
+                                <li>Поиск людей</li>
+                                <li>Поиск компаний</li>
+                                <li>Анализ доменов</li>
+                            </ul>
+                        </div>
+                        <a href="https://inteltechniques.com" class="app-link" target="_blank">Открыть IntelTechniques</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Babel X</h3>
+                        <div class="app-content">
+                            <p>Многоязычный поиск в открытых источниках</p>
+                            <ul>
+                                <li>Поиск на 200+ языках</li>
+                                <li>Анализ соцсетей</li>
+                                <li>Мониторинг упоминаний</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.babelstreet.com" class="app-link" target="_blank">Открыть Babel X</a>
                     </div>
                 </div>
             </div>
@@ -289,41 +448,191 @@
                                 <li>Intercept proxy</li>
                                 <li>Scanner уязвимостей</li>
                                 <li>Intruder для автоматизации</li>
-                                <li>Repeater для ручного тестирования</li>
-                                <li>Decoder для работы с данными</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Burp</a>
+                        <a href="https://portswigger.net/burp" class="app-link" target="_blank">Скачать Burp Suite</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>SQL Injection Tool</h3>
+                        <h3>SQLmap</h3>
                         <div class="app-content">
                             <p>Автоматизация SQL injection атак</p>
                             <ul>
                                 <li>Обнаружение уязвимостей</li>
                                 <li>Извлечение данных</li>
                                 <li>Blind SQL injection</li>
-                                <li>Time-based атаки</li>
-                                <li>Обход аутентификации</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть SQLmap</a>
+                        <a href="http://sqlmap.org" class="app-link" target="_blank">Скачать SQLmap</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>XSS Scanner</h3>
+                        <h3>OWASP ZAP</h3>
                         <div class="app-content">
-                            <p>Обнаружение XSS уязвимостей</p>
+                            <p>Бесплатный сканер веб-безопасности</p>
                             <ul>
-                                <li>Reflected XSS</li>
-                                <li>Stored XSS</li>
-                                <li>DOM-based XSS</li>
                                 <li>Автоматическое сканирование</li>
+                                <li>Ручное тестирование</li>
+                                <li>API безопасность</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.zaproxy.org" class="app-link" target="_blank">Скачать ZAP</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Nikto</h3>
+                        <div class="app-content">
+                            <p>Сканер веб-серверов</p>
+                            <ul>
+                                <li>Обнаружение уязвимостей</li>
+                                <li>Проверка конфигураций</li>
+                                <li>Поиск опасных файлов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/sullo/nikto" class="app-link" target="_blank">Скачать Nikto</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Dirb</h3>
+                        <div class="app-content">
+                            <p>Сканер директорий и файлов</p>
+                            <ul>
+                                <li>Поиск скрытых директорий</li>
+                                <li>Настраиваемые словари</li>
+                                <li>Рекурсивный поиск</li>
+                            </ul>
+                        </div>
+                        <a href="https://gitlab.com/kalilinux/packages/dirb" class="app-link" target="_blank">Скачать Dirb</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Gobuster</h3>
+                        <div class="app-content">
+                            <p>Быстрый сканер директорий и DNS</p>
+                            <ul>
+                                <li>Многопоточность</li>
+                                <li>Поддержка расширений</li>
+                                <li>DNS субдоменов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/OJ/gobuster" class="app-link" target="_blank">Скачать Gobuster</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Wfuzz</h3>
+                        <div class="app-content">
+                            <p>Фаззер веб-приложений</p>
+                            <ul>
+                                <li>Фаззинг параметров</li>
+                                <li>Множественные инъекции</li>
+                                <li>Фильтрация результатов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/xmendez/wfuzz" class="app-link" target="_blank">Скачать Wfuzz</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Commix</h3>
+                        <div class="app-content">
+                            <p>Автоматизация командной инъекции</p>
+                            <ul>
+                                <li>Обнаружение уязвимостей</li>
+                                <li>Автоматическая эксплуатация</li>
+                                <li>Поддержка различных ОС</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/commixproject/commix" class="app-link" target="_blank">Скачать Commix</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>XSSer</h3>
+                        <div class="app-content">
+                            <p>Автоматизация XSS атак</p>
+                            <ul>
+                                <li>Обнаружение XSS</li>
+                                <li>Генерация payloads</li>
+                                <li>Различные типы XSS</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/epsylon/xsser" class="app-link" target="_blank">Скачать XSSer</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>XSStrike</h3>
+                        <div class="app-content">
+                            <p>Продвинутый сканер XSS</p>
+                            <ul>
+                                <li>Обход WAF</li>
+                                <li>Умные payloads</li>
+                                <li>Анализ ответов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/s0md3v/XSStrike" class="app-link" target="_blank">Скачать XSStrike</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>WhatWeb</h3>
+                        <div class="app-content">
+                            <p>Идентификация веб-технологий</p>
+                            <ul>
+                                <li>Определение CMS</li>
+                                <li>Анализ фреймворков</li>
+                                <li>Определение серверов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/urbanadventurer/WhatWeb" class="app-link" target="_blank">Скачать WhatWeb</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Subfinder</h3>
+                        <div class="app-content">
+                            <p>Обнаружение субдоменов</p>
+                            <ul>
+                                <li>Пассивный сбор</li>
+                                <li>Множественные источники</li>
+                                <li>Быстрое сканирование</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/projectdiscovery/subfinder" class="app-link" target="_blank">Скачать Subfinder</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>FFUF</h3>
+                        <div class="app-content">
+                            <p>Быстрый веб-фаззер</p>
+                            <ul>
+                                <li>Высокая скорость</li>
+                                <li>Гибкая настройка</li>
+                                <li>Поддержка фильтров</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/ffuf/ffuf" class="app-link" target="_blank">Скачать FFUF</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Arjun</h3>
+                        <div class="app-content">
+                            <p>Обнаружение параметров HTTP</p>
+                            <ul>
+                                <li>Поиск скрытых параметров</li>
+                                <li>Поддержка GET/POST</li>
+                                <li>Экспорт результатов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/s0md3v/Arjun" class="app-link" target="_blank">Скачать Arjun</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>JWT Tool</h3>
+                        <div class="app-content">
+                            <p>Анализ и взлом JWT токенов</p>
+                            <ul>
+                                <li>Валидация токенов</li>
+                                <li>Атаки на подпись</li>
                                 <li>Генерация payloads</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Сканировать</a>
+                        <a href="https://github.com/ticarpi/jwt_tool" class="app-link" target="_blank">Скачать JWT Tool</a>
                     </div>
                 </div>
             </div>
@@ -340,41 +649,191 @@
                                 <li>Base64 encode/decode</li>
                                 <li>Хеширование</li>
                                 <li>Шифрование/дешифрование</li>
-                                <li>Анализ данных</li>
-                                <li>Операции с битами</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть CyberChef</a>
+                        <a href="https://gchq.github.io/CyberChef" class="app-link" target="_blank">Открыть CyberChef</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>RSA Calculator</h3>
+                        <h3>John the Ripper</h3>
+                        <div class="app-content">
+                            <p>Взлом паролей</p>
+                            <ul>
+                                <li>Подбор по словарю</li>
+                                <li>Брутфорс атаки</li>
+                                <li>Поддержка хешей</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.openwall.com/john" class="app-link" target="_blank">Скачать John</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Hashcat</h3>
+                        <div class="app-content">
+                            <p>Продвинутый взлом паролей</p>
+                            <ul>
+                                <li>Использование GPU</li>
+                                <li>Множество алгоритмов</li>
+                                <li>Высокая скорость</li>
+                            </ul>
+                        </div>
+                        <a href="https://hashcat.net/hashcat" class="app-link" target="_blank">Скачать Hashcat</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>OpenSSL</h3>
+                        <div class="app-content">
+                            <p>Криптографическая библиотека</p>
+                            <ul>
+                                <li>Шифрование/дешифрование</li>
+                                <li>Создание сертификатов</li>
+                                <li>Работа с ключами</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.openssl.org" class="app-link" target="_blank">Скачать OpenSSL</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>GnuPG</h3>
+                        <div class="app-content">
+                            <p>Шифрование и подпись данных</p>
+                            <ul>
+                                <li>PGP шифрование</li>
+                                <li>Управление ключами</li>
+                                <li>Цифровые подписи</li>
+                            </ul>
+                        </div>
+                        <a href="https://gnupg.org" class="app-link" target="_blank">Скачать GnuPG</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>RSATool</h3>
                         <div class="app-content">
                             <p>Работа с RSA шифрованием</p>
                             <ul>
                                 <li>Генерация ключей</li>
                                 <li>Шифрование/дешифрование</li>
                                 <li>Атаки на RSA</li>
-                                <li>Работа с большими числами</li>
-                                <li>Анализ модулей</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть калькулятор</a>
+                        <a href="https://github.com/ius/rsatool" class="app-link" target="_blank">Скачать RSATool</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>Frequency Analysis</h3>
+                        <h3>XORTool</h3>
+                        <div class="app-content">
+                            <p>Анализ и взлом XOR шифрования</p>
+                            <ul>
+                                <li>Подбор XOR ключей</li>
+                                <li>Частотный анализ</li>
+                                <li>Автоматическое дешифрование</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/hellman/xortool" class="app-link" target="_blank">Скачать XORTool</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>FeatherDuster</h3>
+                        <div class="app-content">
+                            <p>Автоматизация криптоанализа</p>
+                            <ul>
+                                <li>Анализ шифров</li>
+                                <li>Автоматические атаки</li>
+                                <li>Подбор методов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/nccgroup/featherduster" class="app-link" target="_blank">Скачать FeatherDuster</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>RsaCtfTool</h3>
+                        <div class="app-content">
+                            <p>Атаки на RSA в CTF</p>
+                            <ul>
+                                <li>Множество атак</li>
+                                <li>Автоматическое решение</li>
+                                <li>Поддержка различных форматов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/RsaCtfTool/RsaCtfTool" class="app-link" target="_blank">Скачать RsaCtfTool</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>QuipQiup</h3>
+                        <div class="app-content">
+                            <p>Взлом шифров подстановки</p>
+                            <ul>
+                                <li>Автоматический анализ</li>
+                                <li>Статистические методы</li>
+                                <li>Интерактивный режим</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.quipqiup.com" class="app-link" target="_blank">Открыть QuipQiup</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Cryptool</h3>
+                        <div class="app-content">
+                            <p>Образовательная платформа криптографии</p>
+                            <ul>
+                                <li>Визуализация алгоритмов</li>
+                                <li>Интерактивные примеры</li>
+                                <li>Анализ шифров</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.cryptool.org" class="app-link" target="_blank">Скачать Cryptool</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Frequency Analysis Tool</h3>
                         <div class="app-content">
                             <p>Анализ частот для взлома шифров</p>
                             <ul>
                                 <li>Анализ Цезаря</li>
                                 <li>Substitution cipher</li>
                                 <li>Vigenère cipher</li>
-                                <li>Статистический анализ</li>
-                                <li>Автоматический подбор ключей</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Анализировать</a>
+                        <a href="https://www.dcode.fr/frequency-analysis" class="app-link" target="_blank">Анализировать текст</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Hash Identifier</h3>
+                        <div class="app-content">
+                            <p>Идентификация типов хешей</p>
+                            <ul>
+                                <li>Определение алгоритмов</li>
+                                <li>Поддержка 300+ хешей</li>
+                                <li>Быстрая идентификация</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/blackploit/hash-identifier" class="app-link" target="_blank">Скачать HashID</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Base64 Decoder</h3>
+                        <div class="app-content">
+                            <p>Декодирование Base64 данных</p>
+                            <ul>
+                                <li>Быстрое декодирование</li>
+                                <li>Поддержка файлов</li>
+                                <li>Множественные кодировки</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.base64decode.org" class="app-link" target="_blank">Открыть декодер</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>VeraCrypt</h3>
+                        <div class="app-content">
+                            <p>Шифрование дисков и файлов</p>
+                            <ul>
+                                <li>Полное шифрование диска</li>
+                                <li>Создание томов</li>
+                                <li>Поддержка алгоритмов</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.veracrypt.fr" class="app-link" target="_blank">Скачать VeraCrypt</a>
                     </div>
                 </div>
             </div>
@@ -391,11 +850,35 @@
                                 <li>Захват пакетов</li>
                                 <li>Фильтрация трафика</li>
                                 <li>Анализ протоколов</li>
-                                <li>Поиск аномалий</li>
-                                <li>Экспорт данных</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Wireshark</a>
+                        <a href="https://www.wireshark.org" class="app-link" target="_blank">Скачать Wireshark</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Autopsy</h3>
+                        <div class="app-content">
+                            <p>Цифровая криминалистика</p>
+                            <ul>
+                                <li>Анализ дисков</li>
+                                <li>Восстановление файлов</li>
+                                <li>Анализ метаданных</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.sleuthkit.org/autopsy" class="app-link" target="_blank">Скачать Autopsy</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Volatility</h3>
+                        <div class="app-content">
+                            <p>Анализ оперативной памяти</p>
+                            <ul>
+                                <li>Анализ дампов памяти</li>
+                                <li>Поиск процессов</li>
+                                <li>Извлечение данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.volatilityfoundation.org" class="app-link" target="_blank">Скачать Volatility</a>
                     </div>
 
                     <div class="app-window">
@@ -406,11 +889,35 @@
                                 <li>Поиск встроенных файлов</li>
                                 <li>Экстракция данных</li>
                                 <li>Анализ firmware</li>
-                                <li>Работа с образами</li>
-                                <li>Сигнатурный анализ</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Binwalk</a>
+                        <a href="https://github.com/ReFirmLabs/binwalk" class="app-link" target="_blank">Скачать Binwalk</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Foremost</h3>
+                        <div class="app-content">
+                            <p>Восстановление удаленных файлов</p>
+                            <ul>
+                                <li>Восстановление по заголовкам</li>
+                                <li>Поддержка форматов</li>
+                                <li>Работа с образами</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/jonstewart/foremost" class="app-link" target="_blank">Скачать Foremost</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Bulk Extractor</h3>
+                        <div class="app-content">
+                            <p>Извлечение информации из образов</p>
+                            <ul>
+                                <li>Поиск email</li>
+                                <li>Извлечение URL</li>
+                                <li>Анализ кредитных карт</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/simsong/bulk_extractor" class="app-link" target="_blank">Скачать Bulk Extractor</a>
                     </div>
 
                     <div class="app-window">
@@ -421,11 +928,113 @@
                                 <li>Сокрытие данных</li>
                                 <li>Извлечение данных</li>
                                 <li>Анализ изображений</li>
-                                <li>Работа с аудиофайлами</li>
-                                <li>Подбор паролей</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть Steghide</a>
+                        <a href="http://steghide.sourceforge.net" class="app-link" target="_blank">Скачать Steghide</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>ExifTool</h3>
+                        <div class="app-content">
+                            <p>Чтение и запись метаданных</p>
+                            <ul>
+                                <li>Анализ EXIF</li>
+                                <li>Работа с IPTC</li>
+                                <li>Поддержка форматов</li>
+                            </ul>
+                        </div>
+                        <a href="https://exiftool.org" class="app-link" target="_blank">Скачать ExifTool</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>FTK Imager</h3>
+                        <div class="app-content">
+                            <p>Создание и анализ образов дисков</p>
+                            <ul>
+                                <li>Создание образов</li>
+                                <li>Анализ файловых систем</li>
+                                <li>Восстановление данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://accessdata.com/product-download/ftk-imager-version-4-5" class="app-link" target="_blank">Скачать FTK Imager</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>PhotoRec</h3>
+                        <div class="app-content">
+                            <p>Восстановление удаленных файлов</p>
+                            <ul>
+                                <li>Восстановление фотографий</li>
+                                <li>Работа с дисками</li>
+                                <li>Поддержка форматов</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.cgsecurity.org/wiki/PhotoRec" class="app-link" target="_blank">Скачать PhotoRec</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Scalpel</h3>
+                        <div class="app-content">
+                            <p>Восстановление файлов по сигнатурам</p>
+                            <ul>
+                                <li>Настраиваемые сигнатуры</li>
+                                <li>Быстрое восстановление</li>
+                                <li>Поддержка файловых систем</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/sleuthkit/scalpel" class="app-link" target="_blank">Скачать Scalpel</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Guymager</h3>
+                        <div class="app-content">
+                            <p>Создание образов носителей</p>
+                            <ul>
+                                <li>Быстрое создание образов</li>
+                                <li>Поддержка форматов</li>
+                                <li>Графический интерфейс</li>
+                            </ul>
+                        </div>
+                        <a href="https://guymager.sourceforge.io" class="app-link" target="_blank">Скачать Guymager</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>X-Ways Forensics</h3>
+                        <div class="app-content">
+                            <p>Профессиональный форензик-инструмент</p>
+                            <ul>
+                                <li>Анализ дисков</li>
+                                <li>Восстановление данных</li>
+                                <li>Работа с памятью</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.x-ways.net/forensics" class="app-link" target="_blank">Узнать о X-Ways</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Registry Viewer</h3>
+                        <div class="app-content">
+                            <p>Анализ реестра Windows</p>
+                            <ul>
+                                <li>Чтение hive файлов</li>
+                                <li>Поиск ключей</li>
+                                <li>Экспорт данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://accessdata.com/product-download/registry-viewer-1-8-0-5" class="app-link" target="_blank">Скачать Registry Viewer</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Plaso</h3>
+                        <div class="app-content">
+                            <p>Анализ временных меток</p>
+                            <ul>
+                                <li>Анализ логов</li>
+                                <li>Временная шкала</li>
+                                <li>Извлечение событий</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/log2timeline/plaso" class="app-link" target="_blank">Скачать Plaso</a>
                     </div>
                 </div>
             </div>
@@ -435,18 +1044,16 @@
                 <h2>Pwn</h2>
                 <div class="apps-container">
                     <div class="app-window">
-                        <h3>GDB Enhanced</h3>
+                        <h3>GDB</h3>
                         <div class="app-content">
-                            <p>Расширенный отладчик</p>
+                            <p>Отладчик GNU</p>
                             <ul>
-                                <li>PEDA</li>
-                                <li>GEF</li>
-                                <li>pwndbg</li>
+                                <li>Отладка программ</li>
                                 <li>Анализ памяти</li>
-                                <li>Отладка эксплойтов</li>
+                                <li>Работа с core dumps</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить GDB</a>
+                        <a href="https://www.gnu.org/software/gdb" class="app-link" target="_blank">Скачать GDB</a>
                     </div>
 
                     <div class="app-window">
@@ -457,26 +1064,178 @@
                                 <li>ROP gadgets</li>
                                 <li>Shellcode generation</li>
                                 <li>Remote exploitation</li>
-                                <li>Работа с сокетами</li>
-                                <li>Автоматизация эксплойтов</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Pwntools</a>
+                        <a href="https://github.com/Gallopsled/pwntools" class="app-link" target="_blank">Установить Pwntools</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>Buffer Overflow</h3>
+                        <h3>ROPgadget</h3>
                         <div class="app-content">
-                            <p>Инструменты для переполнения буфера</p>
+                            <p>Поиск ROP гаджетов</p>
                             <ul>
-                                <li>Pattern creation</li>
-                                <li>Offset calculation</li>
-                                <li>Exploit development</li>
-                                <li>Shellcode injection</li>
-                                <li>ROP chain building</li>
+                                <li>Автоматический поиск</li>
+                                <li>Генерация цепочек</li>
+                                <li>Поддержка архитектур</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть инструменты</a>
+                        <a href="https://github.com/JonathanSalwan/ROPgadget" class="app-link" target="_blank">Скачать ROPgadget</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>one_gadget</h3>
+                        <div class="app-content">
+                            <p>Поиск one-gadget RCE</p>
+                            <ul>
+                                <li>Поиск в libc</li>
+                                <li>Автоматическое обнаружение</li>
+                                <li>Проверка ограничений</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/david942j/one_gadget" class="app-link" target="_blank">Скачать one_gadget</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>LibcSearcher</h3>
+                        <div class="app-content">
+                            <p>Поиск версий libc</p>
+                            <ul>
+                                <li>Определение версии libc</li>
+                                <li>Поиск смещений</li>
+                                <li>База данных символов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/lieanu/LibcSearcher" class="app-link" target="_blank">Скачать LibcSearcher</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>PEDA</h3>
+                        <div class="app-content">
+                            <p>Python Exploit Development Assistance</p>
+                            <ul>
+                                <li>Улучшенный GDB</li>
+                                <li>Автоматизация задач</li>
+                                <li>Визуализация памяти</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/longld/peda" class="app-link" target="_blank">Скачать PEDA</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>GEF</h3>
+                        <div class="app-content">
+                            <p>GDB Enhanced Features</p>
+                            <ul>
+                                <li>Современные возможности</li>
+                                <li>Анализ эксплойтов</li>
+                                <li>Поддержка архитектур</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/hugsy/gef" class="app-link" target="_blank">Скачать GEF</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>pwndbg</h3>
+                        <div class="app-content">
+                            <p>Отладчик для эксплуатации</p>
+                            <ul>
+                                <li>Специализированные команды</li>
+                                <li>Анализ кучи</li>
+                                <li>Визуализация данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/pwndbg/pwndbg" class="app-link" target="_blank">Скачать pwndbg</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Radare2</h3>
+                        <div class="app-content">
+                            <p>Фреймворк для обратной инженерии</p>
+                            <ul>
+                                <li>Дизассемблирование</li>
+                                <li>Отладка</li>
+                                <li>Анализ бинарников</li>
+                            </ul>
+                        </div>
+                        <a href="https://rada.re/n" class="app-link" target="_blank">Скачать Radare2</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Angr</h3>
+                        <div class="app-content">
+                            <p>Фреймворк для бинарного анализа</p>
+                            <ul>
+                                <li>Символьное исполнение</li>
+                                <li>Анализ путей</li>
+                                <li>Автоматическое решение</li>
+                            </ul>
+                        </div>
+                        <a href="https://angr.io" class="app-link" target="_blank">Скачать Angr</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>QIRA</h3>
+                        <div class="app-content">
+                            <p>Timeless Debugger</p>
+                            <ul>
+                                <li>Отладка с временной шкалой</li>
+                                <li>Анализ выполнения</li>
+                                <li>Визуализация состояний</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/geohot/qira" class="app-link" target="_blank">Скачать QIRA</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Shellstorm</h3>
+                        <div class="app-content">
+                            <p>База данных shellcode</p>
+                            <ul>
+                                <li>Готовые shellcodes</li>
+                                <li>Поиск по архитектурам</li>
+                                <li>Тестирование payloads</li>
+                            </ul>
+                        </div>
+                        <a href="http://shell-storm.org/shellcode" class="app-link" target="_blank">Открыть Shellstorm</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>ROPEME</h3>
+                        <div class="app-content">
+                            <p>ROP Exploit Made Easy</p>
+                            <ul>
+                                <li>Генерация ROP цепочек</li>
+                                <li>Поддержка архитектур</li>
+                                <li>Автоматизация эксплуатации</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/packz/ropeme" class="app-link" target="_blank">Скачать ROPEME</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Checksec</h3>
+                        <div class="app-content">
+                            <p>Проверка защит бинарников</p>
+                            <ul>
+                                <li>Анализ ASLR</li>
+                                <li>Проверка NX</li>
+                                <li>Анализ PIE</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/slimm609/checksec.sh" class="app-link" target="_blank">Скачать Checksec</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>LD_PRELOAD Loader</h3>
+                        <div class="app-content">
+                            <p>Внедрение библиотек</p>
+                            <ul>
+                                <li>Хукинг функций</li>
+                                <li>Отладка библиотек</li>
+                                <li>Анализ вызовов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/gaffe23/linux-inject" class="app-link" target="_blank">Скачать Injector</a>
                     </div>
                 </div>
             </div>
@@ -493,11 +1252,9 @@
                                 <li>Декомпиляция</li>
                                 <li>Анализ кода</li>
                                 <li>Scripting</li>
-                                <li>Анализ malware</li>
-                                <li>Работа с разными архитектурами</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Ghidra</a>
+                        <a href="https://ghidra-sre.org" class="app-link" target="_blank">Скачать Ghidra</a>
                     </div>
 
                     <div class="app-window">
@@ -508,11 +1265,9 @@
                                 <li>Graph view</li>
                                 <li>Hex-Rays decompiler</li>
                                 <li>Плагины</li>
-                                <li>Анализ кода</li>
-                                <li>Динамический анализ</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить IDA</a>
+                        <a href="https://hex-rays.com/ida-pro" class="app-link" target="_blank">Узнать об IDA Pro</a>
                     </div>
 
                     <div class="app-window">
@@ -523,11 +1278,165 @@
                                 <li>Анализ бинарников</li>
                                 <li>Отладка</li>
                                 <li>Scripting</li>
-                                <li>Визуальный режим</li>
-                                <li>Кросс-платформенность</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить Radare2</a>
+                        <a href="https://rada.re/n" class="app-link" target="_blank">Скачать Radare2</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Binary Ninja</h3>
+                        <div class="app-content">
+                            <p>Интерактивный дизассемблер</p>
+                            <ul>
+                                <li>Интерактивный анализ</li>
+                                <li>API для плагинов</li>
+                                <li>Поддержка архитектур</li>
+                            </ul>
+                        </div>
+                        <a href="https://binary.ninja" class="app-link" target="_blank">Скачать Binary Ninja</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Hopper</h3>
+                        <div class="app-content">
+                            <p>Дизассемблер для macOS</p>
+                            <ul>
+                                <li>Анализ macOS бинарников</li>
+                                <li>Декомпиляция</li>
+                                <li>Поддержка архитектур</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.hopperapp.com" class="app-link" target="_blank">Скачать Hopper</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>x64dbg</h3>
+                        <div class="app-content">
+                            <p>Отладчик для Windows</p>
+                            <ul>
+                                <li>Отладка x86/x64</li>
+                                <li>Анализ памяти</li>
+                                <li>Плагины</li>
+                            </ul>
+                        </div>
+                        <a href="https://x64dbg.com" class="app-link" target="_blank">Скачать x64dbg</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>OllyDbg</h3>
+                        <div class="app-content">
+                            <p>Отладчик для Windows</p>
+                            <ul>
+                                <li>Анализ ассемблера</li>
+                                <li>Динамическая отладка</li>
+                                <li>Модификация кода</li>
+                            </ul>
+                        </div>
+                        <a href="http://www.ollydbg.de" class="app-link" target="_blank">Скачать OllyDbg</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Immunity Debugger</h3>
+                        <div class="app-content">
+                            <p>Отладчик для эксплойтов</p>
+                            <ul>
+                                <li>Анализ уязвимостей</li>
+                                <li>Python scripting</li>
+                                <li>Визуализация памяти</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.immunityinc.com/products/debugger" class="app-link" target="_blank">Скачать Immunity</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>PE-bear</h3>
+                        <div class="app-content">
+                            <p>Анализ PE файлов</p>
+                            <ul>
+                                <li>Просмотр заголовков</li>
+                                <li>Анализ секций</li>
+                                <li>Экспорт данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://hshrzd.wordpress.com/pe-bear" class="app-link" target="_blank">Скачать PE-bear</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>PEiD</h3>
+                        <div class="app-content">
+                            <p>Определение упаковщиков</p>
+                            <ul>
+                                <li>Обнаружение packers</li>
+                                <li>Анализ сигнатур</li>
+                                <li>Определение компиляторов</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.softpedia.com/get/Programming/Packers-Crypters-Protectors/PEiD-updated.shtml" class="app-link" target="_blank">Скачать PEiD</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>UPX</h3>
+                        <div class="app-content">
+                            <p>Упаковка и распаковка файлов</p>
+                            <ul>
+                                <li>Сжатие исполняемых файлов</li>
+                                <li>Распаковка packed файлов</li>
+                                <li>Поддержка форматов</li>
+                            </ul>
+                        </div>
+                        <a href="https://upx.github.io" class="app-link" target="_blank">Скачать UPX</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Detect It Easy</h3>
+                        <div class="app-content">
+                            <p>Анализатор файлов</p>
+                            <ul>
+                                <li>Определение типов</li>
+                                <li>Анализ сигнатур</li>
+                                <li>Поддержка форматов</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/horsicq/Detect-It-Easy" class="app-link" target="_blank">Скачать DIE</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Cutter</h3>
+                        <div class="app-content">
+                            <p>GUI для Radare2</p>
+                            <ul>
+                                <li>Графический интерфейс</li>
+                                <li>Анализ бинарников</li>
+                                <li>Декомпиляция</li>
+                            </ul>
+                        </div>
+                        <a href="https://cutter.re" class="app-link" target="_blank">Скачать Cutter</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>RetDec</h3>
+                        <div class="app-content">
+                            <p>Декомпилятор на базе LLVM</p>
+                            <ul>
+                                <li>Декомпиляция кода</li>
+                                <li>Поддержка архитектур</li>
+                                <li>Веб-интерфейс</li>
+                            </ul>
+                        </div>
+                        <a href="https://retdec.com" class="app-link" target="_blank">Открыть RetDec</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>JD-GUI</h3>
+                        <div class="app-content">
+                            <p>Декомпилятор Java</p>
+                            <ul>
+                                <li>Декомпиляция .class</li>
+                                <li>Просмотр исходного кода</li>
+                                <li>Сохранение источников</li>
+                            </ul>
+                        </div>
+                        <a href="http://java-decompiler.github.io" class="app-link" target="_blank">Скачать JD-GUI</a>
                     </div>
                 </div>
             </div>
@@ -537,48 +1446,198 @@
                 <h2>Miscellaneous</h2>
                 <div class="apps-container">
                     <div class="app-window">
-                        <h3>Programming</h3>
+                        <h3>Python</h3>
                         <div class="app-content">
-                            <p>Инструменты для программирования</p>
+                            <p>Язык программирования</p>
                             <ul>
-                                <li>Python scripts</li>
-                                <li>Algorithm solvers</li>
-                                <li>Custom tools</li>
                                 <li>Автоматизация задач</li>
-                                <li>Быстрое прототипирование</li>
+                                <li>Написание скриптов</li>
+                                <li>Решение алгоритмов</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть редактор</a>
+                        <a href="https://www.python.org" class="app-link" target="_blank">Скачать Python</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>Steganography</h3>
+                        <h3>VS Code</h3>
                         <div class="app-content">
-                            <p>Работа со стеганографией</p>
+                            <p>Редактор кода</p>
                             <ul>
-                                <li>LSB analysis</li>
-                                <li>Metadata analysis</li>
-                                <li>File carving</li>
-                                <li>Цветовые каналы</li>
+                                <li>Поддержка языков</li>
+                                <li>Расширения</li>
+                                <li>Отладка</li>
+                            </ul>
+                        </div>
+                        <a href="https://code.visualstudio.com" class="app-link" target="_blank">Скачать VS Code</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Stegsolve</h3>
+                        <div class="app-content">
+                            <p>Анализ стеганографии</p>
+                            <ul>
+                                <li>Анализ цветовых каналов</li>
+                                <li>LSB анализ</li>
+                                <li>Фильтрация изображений</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/Giotino/stegsolve" class="app-link" target="_blank">Скачать Stegsolve</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Outguess</h3>
+                        <div class="app-content">
+                            <p>Стеганографический инструмент</p>
+                            <ul>
+                                <li>Сокрытие данных</li>
+                                <li>Извлечение данных</li>
+                                <li>Анализ JPEG</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/crorvick/outguess" class="app-link" target="_blank">Скачать Outguess</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>StegOnline</h3>
+                        <div class="app-content">
+                            <p>Онлайн стегоанализ</p>
+                            <ul>
+                                <li>Веб-интерфейс</li>
+                                <li>Анализ изображений</li>
+                                <li>LSB извлечение</li>
+                            </ul>
+                        </div>
+                        <a href="https://stegonline.georgeom.net" class="app-link" target="_blank">Открыть StegOnline</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Zsteg</h3>
+                        <div class="app-content">
+                            <p>Анализ PNG/BMP стеганографии</p>
+                            <ul>
+                                <li>Обнаружение LSB</li>
+                                <li>Анализ метаданных</li>
+                                <li>Автоматическое извлечение</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/zed-0xff/zsteg" class="app-link" target="_blank">Скачать Zsteg</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>ExifTool</h3>
+                        <div class="app-content">
+                            <p>Анализ метаданных</p>
+                            <ul>
+                                <li>Чтение EXIF</li>
+                                <li>Анализ IPTC</li>
+                                <li>Поддержка форматов</li>
+                            </ul>
+                        </div>
+                        <a href="https://exiftool.org" class="app-link" target="_blank">Скачать ExifTool</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>FFmpeg</h3>
+                        <div class="app-content">
+                            <p>Обработка видео и аудио</p>
+                            <ul>
+                                <li>Конвертация форматов</li>
+                                <li>Извлечение кадров</li>
+                                <li>Анализ метаданных</li>
+                            </ul>
+                        </div>
+                        <a href="https://ffmpeg.org" class="app-link" target="_blank">Скачать FFmpeg</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Audacity</h3>
+                        <div class="app-content">
+                            <p>Аудио редактор</p>
+                            <ul>
+                                <li>Анализ спектра</li>
+                                <li>Фильтрация звука</li>
+                                <li>Извлечение данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.audacityteam.org" class="app-link" target="_blank">Скачать Audacity</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>Sonic Visualiser</h3>
+                        <div class="app-content">
+                            <p>Анализ аудио файлов</p>
+                            <ul>
                                 <li>Спектральный анализ</li>
+                                <li>Визуализация волн</li>
+                                <li>Обнаружение скрытых данных</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Открыть инструменты</a>
+                        <a href="https://www.sonicvisualiser.org" class="app-link" target="_blank">Скачать Sonic Visualiser</a>
                     </div>
 
                     <div class="app-window">
-                        <h3>Network Tools</h3>
+                        <h3>QR Code Reader</h3>
                         <div class="app-content">
-                            <p>Сетевые утилиты</p>
+                            <p>Декодирование QR кодов</p>
                             <ul>
-                                <li>nmap</li>
-                                <li>netcat</li>
-                                <li>tcpdump</li>
-                                <li>Сканирование портов</li>
-                                <li>Анализ сервисов</li>
+                                <li>Распознавание QR</li>
+                                <li>Декодирование данных</li>
+                                <li>Поддержка форматов</li>
                             </ul>
                         </div>
-                        <a href="#" class="app-link">Запустить утилиты</a>
+                        <a href="https://online-barcode-reader.inliteresearch.com" class="app-link" target="_blank">Открыть декодер</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>HexEd.it</h3>
+                        <div class="app-content">
+                            <p>Онлайн hex редактор</p>
+                            <ul>
+                                <li>Просмотр hex</li>
+                                <li>Редактирование файлов</li>
+                                <li>Анализ структур</li>
+                            </ul>
+                        </div>
+                        <a href="https://hexed.it" class="app-link" target="_blank">Открыть HexEd.it</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>CyberChef</h3>
+                        <div class="app-content">
+                            <p>Швейцарский нож для данных</p>
+                            <ul>
+                                <li>Конвертация форматов</li>
+                                <li>Анализ данных</li>
+                                <li>Операции с битами</li>
+                            </ul>
+                        </div>
+                        <a href="https://gchq.github.io/CyberChef" class="app-link" target="_blank">Открыть CyberChef</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>HxD</h3>
+                        <div class="app-content">
+                            <p>Hex редактор для Windows</p>
+                            <ul>
+                                <li>Просмотр и редактирование</li>
+                                <li>Анализ дисков</li>
+                                <li>Поиск данных</li>
+                            </ul>
+                        </div>
+                        <a href="https://mh-nexus.de/en/hxd" class="app-link" target="_blank">Скачать HxD</a>
+                    </div>
+
+                    <div class="app-window">
+                        <h3>010 Editor</h3>
+                        <div class="app-content">
+                            <p>Продвинутый hex редактор</p>
+                            <ul>
+                                <li>Анализ двоичных файлов</li>
+                                <li>Шаблоны для форматов</li>
+                                <li>Скриптинг</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.sweetscape.com/010editor" class="app-link" target="_blank">Скачать 010 Editor</a>
                     </div>
                 </div>
             </div>
